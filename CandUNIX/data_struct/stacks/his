@@ -1,0 +1,1000 @@
+   37  cc test.c
+   38  man execvp
+   39  vi test.c
+   40  cc test.c
+   41  a.out cc -c stack.c
+   42  vi test.c
+   43  man fork
+   44  vi test.c
+   45  vi test.c
+   46  cc test.c
+   47  vi test.c
+   48  cc test.c
+   49  a.out
+   50  a.out cc -c stack.c
+   51  vi test.c
+   52  cc test.c
+   53  vi test.c
+   54  vi makefile
+   55  ls
+   56  cd
+   57  exit
+   58  man 3 make
+   59  man 1 make
+   60  man 2 make
+   61  man 1 make
+   62  man 1 make
+   63  make.info
+   64  info make
+   65  info make
+   66  !
+   67  lfdg
+   68  info make
+   69  info make
+   70  vi make.info
+   71  grep make.info
+   72  info make
+   73  clear
+   74  exit
+   75  man newwin
+   76  info make
+   77  info make
+   78  clear
+   79  cd data_struct/stacks
+   80  ls
+   81  vi stack.h
+   82  make
+   83  stack
+   84  STACK
+   85  vi stack.h
+   86  STACK
+   87  make
+   88  vi makefile
+   89  ls
+   90  cd ..
+   91  cd stacks
+   92  ls
+   93  vi v5.c
+   94  STACK
+   95  make
+   96  man
+   97  man manm
+   98  man man
+   99  exir
+  100  exit
+  101  vi test.c
+  102  cc test.c
+  103  a.out
+  104  rm test.c
+  105  ls
+  106  cd UNIX_ASSIGNMENT
+  107  LS
+  108  ls
+  109  cd process_managenebt
+  110  cd process_managenent
+  111  cd process_management
+  112  ls
+  113  vi file_exec.c
+  114  lsd
+  115  ls
+  116  vi 5a.c
+  117  cd
+  118  cd data_struct/stacks
+  119  ls
+  120  vi makefile
+  121  make
+  122  vi stack.h
+  123  make
+  124  vi stack.h
+  125  make
+  126  vi makefile
+  127  cd
+  128  !
+  129  vi makefile
+  130  history 20
+  131  pwd
+  132  cd data_struct/stacks/
+  133  vi makefile
+  134  cd
+  135  exit
+  136  make -f abc
+  137  vi abc
+  138  vi abc
+  139  make -f abc
+  140  vi abc
+  141  makefile -f abc
+  142  makefile
+  143  makefile -f abc
+  144  makefile abc
+  145  make abc
+  146  vi abc
+  147  ls
+  148  cd test
+  149  ls
+  150  makefile test
+  151  make test
+  152  test
+  153  vi test.c
+  154  make
+  155  make test
+  156  a.out
+  157  ls
+  158  vi abc
+  159  ls
+  160  vi abc
+  161  vi abc
+  162  make abc
+  163  ls
+  164  man make
+  165  info make
+  166  cd
+  167  cd data_struct/stacks
+  168  ls
+  169  makefile
+  170  vi makefile
+  171  make
+  172  STACK
+  173  make -f abc
+  174  makefile -f abc
+  175  make -f abc
+  176  vi test
+  177  make -f test
+  178  vi a.c
+  179  make -f test
+  180  ls
+  181  vi test.c
+  182  vi test
+  183  make -f test
+  184  vi test
+  185  make -f test
+  186  make
+  187  make -f makefile
+  188  vi stack.h
+  189  make -f test
+  190  vi makefile
+  191  make
+  192  vi makefile
+  193  make -f makefile
+  194  vi stack.h
+  195  make
+  196  vi makefile
+  197  vi stack.h
+  198  make
+  199  vi makefile
+  200  ls
+  201  make clean
+  202  ls
+  203  make
+  204  ls
+  205  cd
+  206  cd UNIX_ASSIGNMENT
+  207  ls
+  208  vi makefile
+  209  cd
+  210  cd data_struct/stacks
+  211  vi makefile
+  212  vi test.sh
+  213  sh test.sh ahi helllo
+  214  cat test.sh
+  215  vi test.sh
+  216  sh test.sh hai hello
+  217  vi test.sh
+  218  sh test.sh hai hwllo
+  219  sh test.sh
+  220  cat test.sh
+  221  cd
+  222  cd UNIX_ASSIGNMENT
+  223  cd sys_administration
+  224  ls
+  225  vi mymake.c
+  226  cd
+  227  cd data_struct/stacks
+  228  make -f makefile -f test
+  229  make -f test
+  230  make -f test -f makefile
+  231  make -f makefile stack.o
+  232  make -f makefile stack.o -f test a.c
+  233  make -f makefile test
+  234  make -f makefile -f test
+  235  make -f makefile a.c
+  236  make -f test stack.o
+  237  cd
+  238  cd UNIX_ASSIGNEMNT
+  239  cd UNIX_ASSIGNMENT
+  240  cd sys_administration
+  241  ls
+  242  vi mymake.c
+  243  cd
+  244  cd data_struct/stacks
+  245  make -f makefile test stack.o
+  246  ls
+  247  cp makefile make12.sh
+  248  make -f make12.ah
+  249  make -f make12.sh
+  250  mv make12.sh make12.c
+  251  make -f make12.c
+  252  vi make12.c
+  253  rm make12.c
+  254  ls
+  255  vi test.sh
+  256  ls
+  257  make -f test.sh
+  258  make -f makefile test
+  259  make -f makefile test.sh
+  260  make -f test.sh
+  261  make -f a.c
+  262  cd
+  263  cd UNIX_ASSIGNMENT]
+  264  cd UNIX_ASSIGNMENT
+  265  cd sys_administration
+  266  ls
+  267  vi mymake.c
+  268  make -f -f
+  269  vi mymake.c
+  270  cd
+  271  cd data_sstruct/stacks
+  272  cd data_struct/stacks
+  273  make -f makefile stack.o STACK
+  274  cd 
+  275  cd UNIX_ASSIGNMENT
+  276  cd sys_administration
+  277  vi mymake.c
+  278  ls
+  279  vi test1.c
+  280  vi test.c
+  281  cc test.c
+  282  a.out
+  283  vi test.c
+  284  cc test.c
+  285  a.out
+  286  vi test.c
+  287  cc test.c
+  288  a.out
+  289  vi test.c
+  290  rm test.c
+  291  vi mymake.c
+  292  ls
+  293  cd ..
+  294  ls
+  295  cd process_management
+  296  ls
+  297  cd ..
+  298  cd sys_administration
+  299  ls
+  300  vi mymake.c
+  301  ls
+  302  cd
+  303  cd
+  304  ls
+  305  cd UNIX_ASSIGNMENT
+  306  cd sys_administration
+  307  ls
+  308  cp 20a.c moving.c
+  309  mv moving.c ..
+  310  cd ..
+  311  ld
+  312  ls
+  313  mv moving.c ..
+  314  cd ..
+  315  ls
+  316  mv moving.c assignment
+  317  cd assignment
+  318  ls
+  319  ls moving.c
+  320  rm moving.c
+  321  cd
+  322  cd UNIX_ASSIGNMENT
+  323  cd sys_Administration
+  324  cd sys_administration
+  325  ls
+  326  cd ..
+  327  cd process_management
+  328  ls
+  329  vi makecoffee
+  330  make -f makecoffee
+  331  ls
+  332  vi hot_decoction
+  333  cd ..
+  334  cd sys_admininistration
+  335  cd sys_administration
+  336  lsw
+  337  ls
+  338  vi mymake.c
+  339  cd
+  340  exit
+  341  cd UNIX_ASSIGNMENT
+  342  cd sys_administration
+  343  ls
+  344  vi mymake.c
+  345  cd
+  346  cd data_struct
+  347  cdstacks
+  348  cd stacks
+  349  make makefile stack.o
+  350  make stack.o -f makefile
+  351  make makefile -f test stack.o
+  352  make -f makefile a.c
+  353  make -f test stack.o a.c
+  354  wq
+  355  cd
+  356  cd UNIX_ASSIGNMENT
+  357  cd sys_administration
+  358  mv mymake.c ../../..
+  359  mv mymake.c ..
+  360  cd ..
+  361  mv mymake.c ..
+  362  cd ..
+  363  ls
+  364  mv mymake.c data_struct/stacks
+  365  cd data_struct/stacks
+  366  ls
+  367  vi mymake.c
+  368  make -f test -f makefile a.c
+  369  make  -f makefile a.c
+  370  ls
+  371  vi multiple_stacks.c
+  372  ls
+  373  vi stack.c
+  374  make -f multistack
+  375  vi multistack
+  376  cd
+  377  exit
+  378  cd data_struct/stacks
+  379  vi mulstack
+  380  ls
+  381  make -f mulstack
+  382  MULSTACK
+  383  vi stack.h
+  384  make
+  385  make -f mulstack
+  386  vi mulstack
+  387  vi dupv5e.c
+  388  vi mulstack
+  389  vi makefile
+  390  cp makefile mkstack
+  391  vi mkstack
+  392  vi mulstack
+  393  cat mulstack
+  394  cat mkstack
+  395  vi stack.h
+  396  make -f mkstack
+  397  make -f mulstack
+  398  vi mkstack
+  399  vi test
+  400  make a.c
+  401  make -f test a.c
+  402  make -f test stack.o
+  403  make -f test
+  404  make
+  405  vi makefile
+  406  make -
+  407  make -f
+  408  make -f
+  409  make -f -
+  410  make -
+  411  make -f -
+  412  make -f -
+  413  vi test
+  414  make -f -
+  415  make -f -  stack.o
+  416  make -f mulstack
+  417  make
+  418  vi stack.h
+  419  ls -l stack.h stack.c
+  420  vi makefile
+  421  make stack.o
+  422  make
+  423  vi mkstack
+  424  make -f mulstack
+  425  vi mkstack
+  426  make -f mkstack
+  427  vi stack.h
+  428  make -f mkstack
+  429  make -f mulstack
+  430  vi stack.h
+  431  make -f mulstack
+  432  make -f test multiple_stacks.o
+  433  make -f test multiple_stacks.c
+  434  make -f test multiple_stacks.o
+  435  vi mulstack
+  436  vi test
+  437  make -f test -f mkstack a.p
+  438  make -f test -f mkstack a.o
+  439  make -f test -f mkstack a.o
+  440  make -f makefile -f mkstack a.o
+  441  make -f mulstack -f mkstack a.o
+  442  make -f mulstack -f mkstack a.c
+  443  make -f mulstack -f mkstack stack.c
+  444  make -f test  -f mkstack a.c
+  445  make -f test  -f mkstack a.o
+  446  make   -f mkstack a.o
+  447  make   -f mkstack a.c
+  448  vi test
+  449  vi test.c
+  450  vi a.c
+  451  make -f test
+  452  vi test
+  453  vi test
+  454  rm test
+  455  vi test
+  456  make -f test
+  457  vi test.c
+  458  make -f test
+  459  rm test
+  460  vi test
+  461  make -f test
+  462  vi test.c
+  463  make -f test
+  464  make -f test
+  465  vi test
+  466  q!
+  467  q!
+  468  rm test
+  469  vi test
+  470  vi a.c
+  471  make -f test
+  472  vit test.c
+  473  vi test.c
+  474  make -f test
+  475  make -f mkefile -f mkstack stack.o
+  476  make -f makefile -f mkstack stack.o
+  477  vi mymake.c
+  478  exit
+  479  cd data_struct
+  480  cd tacks
+  481  cd stacks
+  482  ls
+  483  vi spfile.data
+  484  ls
+  485  cd hold
+  486  ls
+  487  cd ..
+  488  ls
+  489  vi ymake.c
+  490  vi mymake.c
+  491  cd ..
+  492  cd lists
+  493  ls
+  494  vi assignment2.c
+  495  cd ..
+  496  cd stacks
+  497  vi assignment2.c
+  498  vi mymake.c
+  499  cc mymake.c
+  500  vi mymake.c
+  501  cc mymake.c
+  502  vi mymake.c
+  503  cc mymake.c
+  504  vi mymake.c
+  505  cc mymake.c
+  506  vi mymake.c
+  507  cc mymake.c
+  508  vi mymake.c
+  509  cc mymake.c
+  510  vi mymake.c
+  511  cc mymake.c
+  512  vi mymake.c
+  513  cc mymake.c
+  514  cd ..
+  515  cd lists
+  516  vi assignment
+  517  vi assignment2.c
+  518  cd ..
+  519  cd stacks
+  520  vi myamke.c
+  521  ls
+  522  vi mymake.c
+  523  cc mymake.c
+  524  vi mymake.c
+  525  cc mymake.c
+  526  a.out hai hello
+  527  vi mymake.c
+  528  cc mymake.c
+  529  a.out hai hello
+  530  vi mymake.c
+  531  cc -g mymake.c
+  532  gdb a.out
+  533  vi mymake.c
+  534  cc -g mymake.c
+  535  a.out
+  536  a.out hai hello
+  537  cc mymake.c
+  538  a.out hai haello
+  539  cc -g mymake.c
+  540  gdb a.out
+  541  vi mymake.c
+  542  cc -g mymake.c
+  543  a.out
+  544  a.out hai hello
+  545  cc -g mymake.c
+  546  gdb a.out
+  547  vi mymake.c
+  548  vi mymake.c
+  549  cc -g mymake.c
+  550  a.out hai hello
+  551  cc -g mymake.c
+  552  gdb a.out
+  553  vi mymake.c
+  554  cd
+  555  cd assignment
+  556  cd files
+  557  ls
+  558  vi mini_ls_method_b.c
+  559  cd
+  560  cd data_struct/stacks
+  561  ls
+  562  vi mymake.c
+  563  cc -g mymake.c
+  564  a.out hai hello
+  565  vi mymake.c
+  566  cc -g mymake.c
+  567  vi mymake.c
+  568  cc -g mymake.c
+  569  vi mymake.c
+  570  cc -g mymake.c
+  571  a.out
+  572  a.out hai hello
+  573  vi mymake.c
+  574  cc -g mymake.c
+  575  a.out hai hello
+  576  vi mymake.c
+  577  ls
+  578  vi multiple_stacks.c
+  579  vi mymake.c
+  580  cc -g mymake.c
+  581  a.out hai hello
+  582  vi mymake.c
+  583  cc -g mymake.c
+  584  a.out hai hello
+  585  vi mymake.c
+  586  cc -g mymake.c
+  587  a.out
+  588  vi mymake.c
+  589  cd ..
+  590  cd stacks
+  591  vi multiple_stacks
+  592  vi multiple_stacks.c
+  593  vi mymake.c
+  594  cc -g mymake.c
+  595  a.out
+  596  vi mymake.c
+  597  cc mymake.c
+  598  a.out -f makefile stack.o -f test a.o -f mulstack STACK
+  599  vi mymake.c
+  600  vi mymake.c
+  601  cd
+  602  cd UNIX_ASSIGNMENT
+  603  cd process_management
+  604  ls
+  605  vi get_line.c
+  606  cc get_line.c
+  607  a.out
+  608  vi get_line.c
+  609  cc get_line.c
+  610  a.out
+  611  vi get_line.c
+  612  cc get_line.c
+  613  a.out
+  614  vi get_line.c
+  615  cc get_line.c
+  616  a.out
+  617  vi get_line.c
+  618  cd
+  619  cd data_struct/stacks
+  620  vi mymake.c
+  621  cd
+  622  cd UNIX_ASSIGNMENT
+  623  cd process_management
+  624  vi get_line.c
+  625  cd
+  626  cd data_struct/stacks
+  627  vi mymake.c
+  628  cd 
+  629  cd UNIX_ASSIGNMENT
+  630   cd process_management]
+  631   cd process_management
+  632  vi get_line.c
+  633  cc get_line.c
+  634  a.out
+  635  vi get_line.c
+  636  cc get_line.c
+  637  a.out
+  638  cd
+  639  cd data_struct/stacks
+  640  vi mymake.c
+  641  cd
+  642  exit
+  643  cd data_struct/stacks
+  644  vi mymake
+  645  vi mymake.c
+  646  cd
+  647  cd UNIX_ASSIGNMENT
+  648  cd process_management
+  649  ls
+  650  vi myshell7.c
+  651  ls
+  652  vi 5a.c
+  653  cd]
+  654  cd
+  655  cd data_struct/stacks
+  656  ls
+  657  vi myamake.c
+  658  vi mymake.c
+  659  man 3 exec
+  660  vi mymake.c
+  661  cd
+  662  exit
+  663  cd data_struct/stacks
+  664  ls
+  665  vi mymake.c
+  666  vi sugg_make
+  667  vi mymake.c
+  668  vi sugg_make
+  669  vi mymake.c
+  670  vi multiple_stacks.c
+  671  vi myamke.c
+  672  vi mymake.c
+  673  vi makefile
+  674  vi mymake.c
+  675  man 3 memcpy
+  676  vi mymake.c
+  677  man alloca
+  678  vi mymake.c
+  679  cd
+  680  cd UNIX_ASSIGNMENT
+  681   cd sys_administration
+  682  ls
+  683  cd ..
+  684  cd process_management/
+  685  ls
+  686  cc 9.c
+  687  vi 9.c
+  688  man ctime
+  689  vi 9.c
+  690  cd
+  691  cd d/
+  692  cd data_struct/stacks/
+  693  ls
+  694  vi mymake.c
+  695  man isalnum
+  696  vi mymake.c
+  697  cc mymake.c
+  698  vi mymake.c
+  699  vi mymake.c
+  700  cc mymake.c
+  701  vi mymake.c
+  702  cc mymake.c
+  703  vi mymake.c
+  704  cc mymake.c
+  705  vi mymake.c
+  706  cc mymake.c
+  707  vi mymake.c
+  708  cc mymake.c
+  709  vi mymake.c
+  710  cc mymake.c
+  711  vi mymake.c
+  712  cc mymake.c
+  713  vi mymake.c
+  714  cc mymake.c
+  715  vi mymake.c
+  716  cc mymake.c
+  717  vi mymake.c
+  718  cc mymake.c
+  719  vi mymake.c
+  720  cc mymake.c
+  721  vi mymake.c
+  722  cc mymake.c
+  723  vi mymake.c
+  724  cc mymake.c
+  725  vi mymake.c
+  726  cc mymake.c
+  727  wq
+  728  vi mymake.c
+  729  cc mymake.c
+  730  cd
+  731  exit
+  732  cd data_struct/stacks/
+  733  vi mymake.c
+  734  cd
+  735  exit
+  736  cd data_struct/stacks/
+  737  vi mymake.c
+  738  cp mymake.c dupmymake.c
+  739  vi mymake.c
+  740  cc mymake.c
+  741  vi mymake.c
+  742  cc mymake.c
+  743  vi mymake.c
+  744  cc mymake.c
+  745  vi mymake.c
+  746  cc mymake.c
+  747  vi mymake.c
+  748  cc mymake.c
+  749  vi mymake.c
+  750  vi mymake.c
+  751  cc mymake.c
+  752  vi mymake.c
+  753  cc mymake.c
+  754  vi mymake.c
+  755  cc mymake.c
+  756  vi mymake.c
+  757  cc mymake.c
+  758  vi mymake.c
+  759  cc mymake.c
+  760  vi mymake.c
+  761  cc mymake.c
+  762  vi mymake.c
+  763  cc mymake.c
+  764  vi mymake.c
+  765  cc mymake.c
+  766  vi mymake.c
+  767  cc mymake.c
+  768  vi mymake.c
+  769  cc mymake.c
+  770  vi mymake.c
+  771  cc mymake.c
+  772  vi mymake.c
+  773  cc mymake.c
+  774  vi mymake.c
+  775  cc mymake.c
+  776  a.out
+  777  vi mymake.c
+  778  man 3 strchr
+  779  vi mymake.c
+  780  vi test
+  781  @
+  782  rm test
+  783  vi test
+  784  make test
+  785  vi a.c
+  786  rm a.c
+  787  make test
+  788  make -f test
+  789  vi a.c
+  790  cc mymake.c
+  791  a.out test
+  792  vi a.c
+  793  vi mymake.c
+  794  man 3 isblank
+  795  vi myamke.c
+  796  vi mymake.c
+  797  cc mymake.c
+  798  a.out test
+  799  vi mymake.c
+  800  cc mymake.c
+  801  vi mymake.c
+  802  cc mymake.c
+  803  a.out test
+  804  vi mymake.c
+  805  cc mymake.c
+  806  a.out test
+  807  vi test
+  808  cc mymake.c
+  809  a.out -f test
+  810  vi test
+  811  vi mymake.c
+  812  cc mymake.c
+  813  a.out
+  814  vi mymake.c
+  815  vi makefile
+  816  vi mkstack
+  817  a.out mkstack
+  818  cc mymake.c
+  819  a.out mkstack
+  820  a.out -f mkstack
+  821  a.out -f test
+  822  vi test
+  823  vi mymake.c
+  824  cc mymake.c
+  825  a.out test
+  826  a.out -f test
+  827  vi mymake.c
+  828  vi test1
+  829  cc mymake.c
+  830  a.out -f test1
+  831  vi test1
+  832  vi mymake.c
+  833  vi test1
+  834  cc mymake.c
+  835  a.out -f test1
+  836  vi test1
+  837  a.out -f test1
+  838  vi test1
+  839  vi mymake.c
+  840  vi test1
+  841  cc mymake.c
+  842  a.out -f test1
+  843  a.out -f test
+  844  vi test
+  845  vi test1
+  846  cc mymake.c
+  847  a.out - f test1
+  848  a.out -f test1
+  849  vi test1
+  850  cc mymake.c
+  851  a.out -f test1
+  852  cc mymake.c
+  853  a.out -f test1
+  854  vi test1
+  855  vi mymake.c
+  856  cc mymake.c
+  857  a.out -f test1
+  858  vi mymake.c
+  859  cc mymake.c
+  860  a.out -f test1
+  861  vi mymake.c
+  862  cc mymake.c
+  863  vi mymake.c
+  864  cc mymake.c
+  865  vi mymake.c
+  866  cc mymake.c
+  867  ls *dup
+  868  ls
+  869  cp mymake.c dupmymake.c
+  870  vi dupmymake.c
+  871  vi mymake.c
+  872  cc mymake.c
+  873  a.out -f makefile
+  874  a.out
+  875  a.out -f test1
+  876  vi mymake.c
+  877  cc mymake.c
+  878  a.out
+  879  a.out -f
+  880  a.out -f test1
+  881  vi mymake.c
+  882  cc mymake.c
+  883  a.out
+  884  vi makefile
+  885  cc mymake.c
+  886  a.out
+  887  vi makefile.c
+  888  ls
+  889  vi mymake.c
+  890  cc mymake.c
+  891  vi mymake.c
+  892  cc mymake.c
+  893  vi mymake.c
+  894  vi test1
+  895  vi test1.c
+  896  cc test1.c
+  897  a.out
+  898  vi test1.c
+  899  cd
+  900  cd UNIX_ASSIGNMENT/process_management/
+  901  ls
+  902  vi get_line.c
+  903  cc get_line.c
+  904  a.out
+  905  vi get_line.c
+  906  cc get_line.c
+  907  a.out
+  908  vi get_line.c
+  909  cc get_line.c
+  910  a.out
+  911  vi get_line.c
+  912  cd
+  913  cd data_struct/stacks/
+  914  vi mymake.c
+  915  cc get_line.c
+  916  cc mymake.c
+  917  a.out
+  918  a.out
+  919  vi mymake.c
+  920  cc mymake.c
+  921  a.out
+  922  vi mymake.c
+  923  cc mymake.c
+  924  a.out
+  925  vi mymake.c
+  926  cc mymake.c
+  927  a.out
+  928  vi makefile
+  929  cc -g mymake.c
+  930  gdb a.out
+  931  vi mymake.c
+  932  cc -g mymake.c
+  933  a.out
+  934  cc -g mymake.c
+  935  gdb a.out
+  936  vi mymake.c
+  937  cc -g mymake.c
+  938  a.out
+  939  exit
+  940  cd data_struct/stacks/
+  941  vi mymake.c
+  942  cc mymake.c
+  943  a.out
+  944  vi mymake.c
+  945  cc mymake.c
+  946  a.out
+  947  vi mymake.c
+  948  cc mymake.c
+  949  a.out
+  950  a.out -f test1
+  951  vi test1
+  952  cc mymake.c
+  953  a.out -f test1
+  954  a.out
+  955  vi makefile
+  956  vi mymake.c
+  957  cc mymake.c
+  958  a.out
+  959  vi mymake.c
+  960  cc mymake.c
+  961  a.out
+  962  vi mymake.c
+  963  cc mymake.c
+  964  a.out
+  965  vi mymake.c
+  966  cc mymake.c
+  967  a.out
+  968  vi mymake.c
+  969  cc mymake.c
+  970  a.out
+  971  vi mymake.c
+  972  cc mymake.c
+  973  a.out
+  974  vi mymake.c
+  975  cc mymake.c
+  976  a.out
+  977  vi mymake.c
+  978  cc mymake.c
+  979  a.out
+  980  vi mymake.c
+  981  cc mymake.c
+  982  a.out
+  983  vi mymake.c
+  984  cc mymake.c
+  985  a.out
+  986  vi mymake.c
+  987  cc mymake.c
+  988  a.out
+  989  vi mymake.c
+  990  cc mymake.c
+  991  vi mymake.c
+  992  cc mymake.c
+  993  a.out
+  994  vi mymake.c
+  995  cc mymake.c
+  996  a.out
+  997  vi mymake.c
+  998  vi makefile
+  999  cd
+ 1000  exit
+ 1001  ls -l
+ 1002  ls -i
+ 1003  cd assignment
+ 1004  cd files
+ 1005  ls -R
+ 1006  ls -li
+ 1007  ls -ri
+ 1008  vi test.c
+ 1009  ls c*
+ 1010  vi cpp.c
+ 1011  ls M*
+ 1012  ls m*
+ 1013  vi minicpp.c
+ 1014  cc cpp.c
+ 1015  a.out test.c outfile.c
+ 1016  vi outfile.c
+ 1017  cc minicpp.c
+ 1018  a.out test.c outfile.c
+ 1019  vi outfile.c
+ 1020  vi /usr/include/stdio.h
+ 1021  vi /usr/include/stddef.h
+ 1022  vi /usr/include/stdio.h
+ 1023  vi /usr/inclue/stddef.h
+ 1024  vi /usr/include/stdio.h
+ 1025  vi /usr/include/bits/types.h
+ 1026  cd
+ 1027  man make
+ 1028  vi makefile
+ 1029  cd data_struct/stacks/
+ 1030  vi makefile
+ 1031  vi test.c
+ 1032  make test
+ 1033  test
+ 1034  vi test
+ 1035  history
+ 1036  history > his

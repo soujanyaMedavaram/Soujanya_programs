@@ -1,0 +1,21 @@
+#all:
+#	cd ../;  $(MAKE)
+
+all : create deposit withdraw change balance
+create :  create.c ../../sb.h
+	cc -o create create.c
+
+withdraw : withdraw.c ../../sb.h
+	cc -o withdraw withdraw.c
+
+deposit : withdraw
+	@-rm -f deposit
+	ln withdraw deposit
+
+change : withdraw
+	@-rm -f change
+	ln withdraw change
+
+balance : withdraw
+	@-rm -f balance
+	ln withdraw balance

@@ -1,0 +1,11 @@
+   67  vi makefile
+   68  cp ../../utils.c ../../utils_dup.c
+   69  cp ../../utils.h ../../utils_dup.h
+   70  cp ../sb.h ../sb_dup.h
+   71  cp selection.h selection_dup.h
+   72  cp static.c static_dup.c
+   73  cp dynamic.c dynamic_dup.c
+   74  cp server.c server_dup.c
+   75  cp ipc.h ipc_dup.h
+   76  cp proto.h proto_dup.h
+   77  history 20 > thisfile

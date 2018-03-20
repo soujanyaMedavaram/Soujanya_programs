@@ -1,0 +1,35 @@
+all : server create deposit withdraw change balance shutdown
+
+server : ../server.c ../ipc.h config.o ../../../sb.h ../../request.h \
+			shm.o ../../../do_exit.c
+	cc -o server ../server.c config.o shm.o ../../../do_exit.c
+
+config.o : ../config.h ../config.c
+	cc -c ../config.c
+
+shm.o : ../ipc.h ../../../sb.h ../../request.h ../../../do_exit.c fifo.c
+	cc -c fifo.c ../../../do_exit.c
+
+create : ../client.c ../../../sb.h ../ipc.h ../../request.h \
+		../../../do_exit.c config.o shm.o
+	cc -o create ../client.c ../../../do_exit.c config.o shm.o
+
+deposit : ../client.c ../../../sb.h ../ipc.h ../../request.h \
+		../../../do_exit.c  config.o shm.o
+	@-rm -f deposit
+	ln create deposit
+
+withdraw : ../client.c ../../../sb.h ../ipc.h ../../request.h ../../../do_exit.c config.o shm.o
+	@-rm -f withdraw
+	ln create withdraw
+
+change : ../client.c ../../../sb.h ../ipc.h ../../request.h ../../../do_exit.c config.o shm.o
+	@-rm -f change 
+	ln create change
+
+balance : ../client.c ../../../sb.h ../ipc.h ../../request.h ../../../do_exit.c config.o shm.o
+	@-rm -f balance 
+	ln create balance
+
+shutdown : ../shutdown.c ../../../do_exit.c
+	cc -o shutdown ../shutdown.c ../../../do_exit.c

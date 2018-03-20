@@ -1,0 +1,45 @@
+all : server create deposit withdraw change balance shutdown 
+
+server : ../server.c ../ipc.h config.o ../../../sb.h ../../proto.h \
+			shm.o utils.o sem.o
+	cc -O -o server ../server.c config.o shm.o utils.o sem.o
+
+config.o : ../config.h ../config.c ../config.sb
+	cc -O -c ../config.c
+
+sem.o : ../../sem.c ../../sem.h
+	cc -O -c ../../sem.c
+
+shm.o : shm.c ../../../sb.h ../../proto.h ../ipc.h 
+	cc -O -c  shm.c  
+
+utils.o:	../../../../utils.c
+	cc -O -c ../../../../utils.c
+
+create : ../client.c ../../../sb.h ../ipc.h ../../proto.h \
+		utils.o config.o shm.o sem.o
+	cc -O -o create ../client.c utils.o config.o shm.o sem.o
+
+deposit : create
+	@-rm -f deposit
+	ln create deposit
+
+withdraw : create
+	@-rm -f withdraw
+	ln create withdraw
+
+change : create
+	@-rm -f change 
+	ln create change
+
+balance : create
+	@-rm -f balance 
+	ln create balance
+
+shutdown : create
+	@-rm -f shutdown 
+	ln create shutdown
+
+clean :
+	@-rm -f server create deposit withdraw change balance shutdown
+	@-rm -f *.o

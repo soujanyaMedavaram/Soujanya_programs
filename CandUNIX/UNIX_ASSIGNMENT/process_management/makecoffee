@@ -1,0 +1,18 @@
+coffee:hot_milk hot_decoction sugar
+	@echo "MIx hot milk, sugar and the hot decoction"
+	@echo "Stir well. And then serve the coffee"
+	@cat hot_milk hot_decoction sugar > coffee
+
+hot_milk:	milk
+	@echo "Heat up the milk upto the Pasteurization point"
+	@echo "Keep the hot milk for future use."
+	@cat milk > hot_milk
+
+hot_water: water
+	@echo "Heat the fresh water nicely"
+	@cat water > hotwater
+
+hot_decoction: hot_water coffee_powder
+	@echo "Mix the hot water with the coffee power"
+	@echo "Use apppropriate filter to remove the grounds"
+	@cat hot_water coffee_powder > hot_decoction

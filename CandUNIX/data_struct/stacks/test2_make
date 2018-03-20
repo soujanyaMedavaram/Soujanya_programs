@@ -1,0 +1,6 @@
+
+
+
+target3 : target4
+	@echo target3
+

@@ -1,0 +1,164 @@
+    1  cd UNIX/process_management/
+    2  vi myshell.c 
+    3  man getuid
+    4  vi myshell.c 
+    5  vi myshell.c 
+    6  cc myshell.c
+    7  a.ot
+    8  a.out
+    9  a.out
+   10  vi myshell.c
+   11  ls | wc
+   12  ls | wc
+   13  ls -l | wc
+   14  clear
+   15  ls
+   16  vi myshell.c
+   17  cc myshell.c 
+   18  a.out
+   19  a.out
+   20  cc myshell.c 
+   21  a.out]
+   22  a.out
+   23  vi myshell.c 
+   24  vi 5a.c
+   25  vi 5.c
+   26  vi 5a.c
+   27  cd
+   28  vi p12.c
+   29  vi p12.c
+   30  cd UNIX/process_management/
+   31  vi 5b.c
+   32  cd
+   33  vi pm5c.c
+   34  scp pm5c.c b0154@89.0.0.230:
+   35  scp pm5c.c b0154@89.0.0.230:
+   36  cd UNIX/process_management/
+   37  scp 3.c b0154@89.0.0.230:
+   38  clear
+   39  telnet
+   40  telnet
+   41  finger
+   42  aruna
+   43  cc -g myshell.c
+   44  gdb a.out
+   45  a.out
+   46  cc 3.c
+   47  a.ouy
+   48  a.out
+   49  vi 3.c
+   50  a.out
+   51  vi 3.c
+   52  vi myshell.c 
+   53  ls
+   54  rm xx
+   55  vi myshell.c 
+   56  ls
+   57  cat temp
+   58  ls -l temp
+   59  ls
+   60  cat -v tmp
+   61  ls
+   62  vi input.c
+   63  mv input.c input
+   64  ls -l input
+   65  chmod -x input
+   66  ls -l input
+   67  vi myshell.c
+   68  a.out input
+   69  cc myshell.c
+   70  a.out input
+   71  sh input
+   72  ls -l input
+   73  chmod -r input
+   74  ls -l input
+   75  sh input
+   76  chmod +r input
+   77  sh input
+   78  ls
+   79  cat trial.c
+   80  vi hello.c
+   81  cc hello.c
+   82  a.out
+   83  a.out
+   84  ls -l a.out
+   85  cc -o hello hello.c
+   86  hello
+   87  ls -l hello
+   88  cc myshell.c
+   89  a.out
+   90  man elf
+   91  man ELF
+   92  man a.out
+   93  man elf.h
+   94  man a.out.h
+   95  man execlp
+   96  man 2 execve
+   97  input
+   98  vi input
+   99  input
+  100  vi input
+  101  input
+  102  sh input
+  103  vi input
+  104  sh input
+  105  sh hello
+  106  hello
+  107  input
+  108  sh hello
+  109  input
+  110  chmod +x input
+  111  input
+  112  chmod -r input
+  113  ls -l input
+  114  chmod -w input
+  115  ls -l input
+  116  umask 0
+  117  chmod -w input
+  118  ls -l input
+  119  input
+  120  chmod +r input
+  121  input
+  122  ls -l input
+  123  cc myshell.c
+  124  a.out
+  125  sh hello
+  126  cat input
+  127  sh input
+  128  vi myshell.c
+  129  cat hello
+  130  cat input]
+  131  cat input
+  132  cat -v input
+  133  cat -v input
+  134  cat -v hello
+  135  ls -l input
+  136  ps
+  137  sh input
+  138  ps
+  139  sh
+  140  ps
+  141  sh
+  142  sh input input
+  143  sh - input
+  144  sh input -
+  145  sh -
+  146  sh input
+  147  sh hello
+  148  sh
+  149  vi input
+  150  chmod +x inp
+  151  input
+  152  vi input
+  153  input
+  154  vi /usr/include/a.out.h 
+  155  man od
+  156  man od
+  157  od -t x1 a.out
+  158  man execlp
+  159  man 2 exec
+  160  man 2 execve
+  161  man 8 ld.so
+  162  man 8 ldconfig
+  163  date
+  164  history 1000 > shell_history

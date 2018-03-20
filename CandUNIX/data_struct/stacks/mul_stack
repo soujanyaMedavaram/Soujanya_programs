@@ -1,0 +1,8 @@
+MULSTACK : stack.o multiple_stacks.o
+	cc -o MULSTACK stack.o multiple_stacks.o
+
+stack.o : stack.c stack.h
+	cc -c stack.c
+
+multiple_stacks.o :  multiple_stacks.c stack.h
+	cc -c multiple_stacks.c

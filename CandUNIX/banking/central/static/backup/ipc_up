@@ -1,0 +1,17 @@
+
+void create_ipc ( int max_chan ) ;
+void open_ipc ( );
+void read_request ( Request *req, int size );
+void write_request ( int channel, Request *req );
+void write_reply ( reply *rep, int size, int channel );
+void read_reply ( int channel, reply *rep, int size );
+void remove_ipc ( );
+
+# define CREATE		1
+# define DEPOSIT	2
+# define WITHDRAW	3
+# define CHANGE		4
+# define BALANCE	5
+
+int fd_max;
+int fd[fd_max];

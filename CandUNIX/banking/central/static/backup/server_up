@@ -1,0 +1,137 @@
+# include <stdio.h>
+# include "ipc.h"
+# include "config.h"
+# include "../../sb.h"
+# include "../request.h"
+
+
+main ( ) {
+	FILE *fp;
+	Request req;
+	union reply reply;
+	if ( access ( datafile, F_OK )  ) 
+		fd = open ( datafile, O_WRONLY | O_CREAT ,0600);
+	else 
+		fd = open ( datafile, O_RDWR ); 
+	if ( fd == -1 ) 
+		do_exit ( 2, "fail to open database file\n" );
+	switch ( fork ( ) ) {
+		case -1 :
+			do_exit ( 1, "fork failed\n" );
+		case 0:	break;
+		default : exit ( 0 );
+	}
+	fp = ( "ser_pid", "w" );
+	if ( fp == NULL )
+		do_exit ( 2, "Can not open ser_pid\n" );
+	fprintf ( fp, "%d", getpid ( ) );
+	fclose ( fp );
+	create_ipc ( max_channel ( ) );
+	open_ipc ( );
+	while ( 1 ) {
+		read_request ( &req, sizeof ( req ) );
+		acc_no = req.acc_no;
+		amount = req.amount;
+		switch ( request.type ) {
+			case CREATE :
+				reply.type = CREATE;
+				if ( req.amount < 0 ) {
+					reply.result = 0;
+					strcpy ( reply.msg, "insufficient balance\n" );
+					write_reply ( &reply , sizeof ( reply ),\
+					req.rep_chl );
+				}
+				strcpy ( acc.name, req.cust_name );
+				strcpy ( acc.phone, req.phone );
+				acc.balance = req.amount ;
+				acc.acc_no = lseek ( fp, 0, SEKK_END ) /sizeof ( acc ); 
+				acc.acc_no++;
+				write ( fd, &acc, sizeof ( acc ) );
+				close ( fd );
+				reply.result = 1;
+				write_reply ( &reply, sizeof ( reply ), req.rep_chl );
+				break;
+			case DEPOSIT :
+				reply.type = DEPOSIT;
+				lseek ( fd, (acc_no -1) * sizeof ( acc ), SEEK_SET );
+				read ( fd, &acc, sizeof ( acc ) );
+				if ( acc_no != acc.acc_no ) {
+					reply.result = 0;
+					strcpy ( reply.msg, "no user with this \
+					account number" );
+					write_reply ( &reply, sizeof ( reply ), \
+					req.rep_chl );
+				}
+				acc.balance += amount;
+				sleep ( 5 );
+				lseek ( fd, (acc_no -1 ) * sizeof ( acc ), SEEK_SET );
+				write ( fd, &acc, sizeof ( acc ) );
+				close ( fd );
+				reply.result = 1;
+				write_reply ( &reply, sizeof ( reply ), req.rep_chl );
+				break;
+			case WITHDRAW :
+				reply.type = WITHDRAW;
+				lseek ( fd, (acc_no -1) * sizeof ( acc ), SEEK_SET );
+				read ( fd, &acc, sizeof ( acc ) );
+				if ( acc_no != acc.acc_no ) {
+					reply.result = 0;
+					strcpy ( reply.msg, "no user with this \
+					account number" );
+					write_reply ( &reply, sizeof ( reply ), \
+					req.rep_chl );
+				}
+				if ( acc.balance < amount ) {
+					reply.result = 0;
+					strcpy ( reply.msg, "insufficient balance\n" );
+					write_reply ( &reply, sizeof ( reply ), \
+					req.rep_chl );
+				}
+				acc.balance -= amount;
+				sleep ( 5 );
+				lseek ( fd, (acc_no -1 ) * sizeof ( acc ), SEEK_SET );
+				write ( fd, &acc, sizeof ( acc ) );
+				close ( fd );
+				reply.result = 1;
+				write_reply ( &reply, sizeof ( reply ), req.rep_chl );
+				break;
+			case CHANGE:
+				reply.type = CHANGE;
+				lseek ( fd, (acc_no -1) * sizeof ( acc ), SEEK_SET );
+				read ( fd, &acc, sizeof ( acc ) );
+				if ( acc_no != acc.acc_no ) {
+					reply.result = 0;
+					strcpy ( reply.msg, "no user with this \
+					account number" );
+					write_reply ( &reply, sizeof ( reply ), \
+					req.rep_chl );
+				}
+				strcpy ( acc.phone, req.phone );
+				sleep ( 5 );
+				lseek ( fd, (acc_no -1 ) * sizeof ( acc ), SEEK_SET );
+				write ( fd, &acc, sizeof ( acc ) );
+				close ( fd );
+				reply.result = 1;
+				strcpy ( reply.ch_rep.phone, acc.phone );
+				write_reply ( &reply, sizeof( reply), req.rep_chl );
+				break;
+			case BALANCE :
+				reply.type = BALANCE;
+				lseek ( fd, (acc_no -1) * sizeof ( acc ), SEEK_SET );
+				read ( fd, &acc, sizeof ( acc ) );
+				if ( acc_no != acc.acc_no ) {
+					reply.result = 0;
+					strcpy ( reply.msg, "no user with this \
+					account number\n" );
+					write_reply (&reply, sizeof ( reply ), \
+					req.rep_chl );
+				}
+				reply.result = 1;
+				reply.bl_rep.amount = acc.balance;
+				write_reply ( &reply, sizeof ( reply ), req.rep_chl );
+				break;
+		}
+	}
+	remove_ipc ( );
+}
+	

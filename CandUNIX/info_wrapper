@@ -1,0 +1,50 @@
+  999  vi test.c
+ 1000  exit
+ 1001  cd UNIX/oltp/
+ 1002  ls
+ 1003  vi test.c
+ 1004  cc test.c
+ 1005  a.out
+ 1006  cat txyt
+ 1007  cat txt
+ 1008  vi test.c
+ 1009  cc test.c
+ 1010  a.out
+ 1011  cat txt
+ 1012  vi test.c
+ 1013  cat txt
+ 1014  vi test.c
+ 1015  cc test.c
+ 1016  a.out
+ 1017  vi test2.c
+ 1018  cc -S test2.c
+ 1019  vi test2.s
+ 1020  vi test2.c
+ 1021  cc -S test2.c
+ 1022  vi test2.c
+ 1023  cc -S test2.c
+ 1024  vi test2.s
+ 1025  clear
+ 1026  ls
+ 1027  locate libc.a
+ 1028  pwd 
+ 1029  man ar
+ 1030  ar -t /usr/lib/libc.a > table
+ 1031  vi table
+ 1032  ar -x /usr/lib/libc.a read.o
+ 1033  ls
+ 1034  objdump -D read.o > read
+ 1035  vi read
+ 1036  ar -x /usr/lib/libc.a write.o
+ 1037  objdump -D write.o > write
+ 1038  vi write
+ 1039  clear
+ 1040  vi write
+ 1041  ar -t /usr/lib/libc.a printf.o
+ 1042  ar -x /usr/lib/libc.a printf.o
+ 1043  objdump -D printf.o > printf
+ 1044  vi printf
+ 1045  ls
+ 1046  history 20
+ 1047  history 20 > info_wrapper
+ 1048  history 50 > info_wrapper

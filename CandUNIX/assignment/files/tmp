@@ -1,0 +1,369 @@
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+news:x:9:13:news:/etc/news:
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+rpm:x:37:37::/var/lib/rpm:/bin/bash
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+nscd:x:28:28:NSCD Daemon:/:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+rpc:x:32:32:Portmapper RPC user:/:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+mailnull:x:47:47::/var/spool/mqueue:/sbin/nologin
+smmsp:x:51:51::/var/spool/mqueue:/sbin/nologin
+pcap:x:77:77::/var/arpwatch:/sbin/nologin
+apache:x:48:48:Apache:/var/www:/sbin/nologin
+squid:x:23:23::/var/spool/squid:/sbin/nologin
+webalizer:x:67:67:Webalizer:/var/www/html/usage:/sbin/nologin
+xfs:x:43:43:X Font Server:/etc/X11/fs:/sbin/nologin
+named:x:25:25:Named:/var/named:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+gdm:x:42:42::/var/gdm:/sbin/nologin
+amanda:x:33:6:Amanda user:/var/lib/amanda:/bin/bash
+canna:x:39:39:Canna Service User:/var/lib/canna:/sbin/nologin
+postgres:x:26:26:PostgreSQL Server:/var/lib/pgsql:/bin/bash
+desktop:x:80:80:desktop:/var/lib/menu/kde:/sbin/nologin
+off:x:0:0::/home/uttara/off:/sbin/halt
+mls:x:500:501::/home/mls:/bin/bash
+ua9081:x:501:502:Prathap:/home/uttara/audio43/ua9081:/bin/bash
+a9059:x:502:502:poornima:/home/uttara/audio43/a9059:/bin/bash
+a9114:x:503:502:srivani:/home/uttara/audio43/a9114:/bin/bash
+a9269:x:504:502:Rashmi:/home/uttara/audio43/a9269:/bin/bash
+a9633:x:505:502:deepa:/home/uttara/audio43/a9633:/bin/bash
+a6009:x:506:506::/home/uttara/audio43/a6009:/bin/bash
+a9215:x:507:502:priya:/home/uttara/audio43/a9215:/bin/bash
+a7584:x:508:502:Rekha:/home/uttara/audio43/a7584:/bin/bash
+a9499:x:509:502:gayatri:/home/uttara/audio43/a9499:/bin/bash
+a9601:x:510:502:Sandhya:/home/uttara/audio43/a9601:/bin/bash
+a9569:x:511:502:Geetanjali:/home/uttara/audio43/a9569:/bin/bash
+a9303:x:512:502:Tejaswini:/home/uttara/audio43/a9303:/bin/bash
+a9655:x:513:502:Asha:/home/uttara/audio43/a9655:/bin/bash
+a9837:x:514:502:Narasamma:/home/uttara/audio43/a9837:/bin/bash
+a9836:x:515:502:Manjula:/home/uttara/audio43/a9836:/bin/bash
+a8693:x:516:502:Ashwini S:/home/uttara/audio43/a8693:/bin/bash
+a8999:x:517:502:Kavitha:/home/uttara/audio43/a8999:/bin/bash
+a9842:x:518:502:Uma:/home/uttara/audio43/a9842:/bin/bash
+a9190:x:519:502:Shantala:/home/uttara/audio43/a9190:/bin/bash
+a9236:x:520:502:Shubha S:/home/uttara/audio43/a9236:/bin/bash
+a8360:x:521:502:spoorthy:/home/uttara/audio43/a8360:/bin/bash
+a9242:x:522:502:Radhika:/home/uttara/audio43/a9242:/bin/bash
+ua8360:x:523:502:Spoorthy:/home/uttara/audio43/ua8360:/bin/bash
+a9324:x:524:502:Sindhushri K:/home/uttara/audio43/a9324:/bin/bash
+a8656:x:525:502:Manjula:/home/uttara/audio43/a8656:/bin/bash
+a8359:x:526:502:Thejaswini M B:/home/uttara/audio43/a8359:/bin/bash
+a9503:x:527:502:Veena:/home/uttara/audio43/a9503:/bin/bash
+a9428:x:528:502:Leela Bai K R:/home/uttara/audio43/a9428:/bin/bash
+a9048:x:529:502:Jyotsna B A:/home/uttara/audio43/a9048:/bin/bash
+a9432:x:530:502:Umalatha:/home/uttara/audio43/a9432:/bin/bash
+a9231:x:531:502:Kavitha S:/home/uttara/audio43/a9231:/bin/bash
+a9770:x:532:502:Sreelatha A:/home/uttara/audio43/a9770:/bin/bash
+a9566:x:533:502:Rashmi S:/home/uttara/audio43/a9566:/bin/bash
+ua9343:x:534:502:Rekha Gangasiri:/home/uttara/audio43/ua9343:/bin/bash
+ua9153:x:535:502:Meenakshi:/home/uttara/audio43/ua9153:/bin/bash
+ua8330:x:536:502:Bharati:/home/uttara/audio43/ua8330:/bin/bash
+ua9876:x:537:502:Anusha:/home/uttara/audio43/ua9876:/bin/bash
+ua9674:x:538:502:Smitha:/home/uttara/audio43/ua9674:/bin/bash
+ua9690:x:539:502:Nethravathi .N.V:/home/uttara/audio43/ua9690:/bin/bash
+ua9815:x:540:502:Madhavi:/home/uttara/audio43/ua9815:/bin/bash
+ua2473:x:541:502:Mufeeda Begum:/home/uttara/audio43/ua2473:/bin/bash
+ua8821:x:542:502:Nazia Banu:/home/uttara/audio43/ua8821:/bin/bash
+ua8281:x:543:502:Nethravathi .G.N:/home/uttara/audio43/ua8281:/bin/bash
+ua9172:x:544:502:sheela:/home/uttara/audio43/ua9172:/bin/bash
+ua9824:x:545:502:Pallavi.K.N:/home/uttara/audio43/ua9824:/bin/bash
+ua8762:x:546:502:Swetha d.p.:/home/uttara/audio43/ua8762:/bin/bash
+ua9835:x:547:502:Naksha:/home/uttara/audio43/ua9835:/bin/bash
+ua9587:x:548:502:deepa:/home/uttara/audio43/ua9587:/bin/bash
+ua9906:x:549:502:Sangeetha Gunje:/home/uttara/audio43/ua9906:/bin/bash
+ua9766:x:550:502:Geeta:/home/uttara/audio43/ua9766:/bin/bash
+ua9715:x:551:502:Mahananda:/home/uttara/audio43/ua9715:/bin/bash
+ua9300:x:552:502:Kavitha:/home/uttara/audio43/ua9300:/bin/bash
+ua8705:x:553:502:Mamatha:/home/uttara/audio43/ua8705:/bin/bash
+ua9818:x:554:502:Prasanthi:/home/uttara/audio43/ua9818:/bin/bash
+ua9778:x:555:502:Pushpavathi:/home/uttara/audio43/ua9778:/bin/bash
+ua2491:x:556:502:Prathiba M:/home/uttara/audio43/ua2491:/bin/bash
+a9402:x:557:502:Shwetha N G:/home/uttara/audio43/a9402:/bin/bash
+ua9769:x:558:502:Jeevitha Reddy.A:/home/uttara/audio43/ua9769:/bin/bash
+ua9913:x:559:502:Ranjani Srinivas:/home/uttara/audio43/ua9913:/bin/bash
+ua9834:x:560:502:Nivedhitha.M:/home/uttara/audio43/ua9834:/bin/bash
+ua9599:x:561:502:Prasuna:/home/uttara/audio43/ua9599:/bin/bash
+ua9773:x:562:502:Ranjeetha:/home/uttara/audio43/ua9773:/bin/bash
+ua9817:x:563:502:Swasthika.S.R:/home/uttara/audio43/ua9817:/bin/bash
+ua9476:x:564:502:Rashmi.K.B:/home/uttara/audio43/ua9476:/bin/bash
+ua7244:x:565:502:Veena Raghuveer:/home/uttara/audio43/ua7244:/bin/bash
+ua9871:x:566:502:Sushma:/home/uttara/audio43/ua9871:/bin/bash
+u9642:x:567:502:Renu.M.S:/home/uttara/audio43/u9642:/bin/bash
+u9648:x:568:502:Sowbhagya lakshmi.S:/home/uttara/audio43/u9648:/bin/bash
+ua9526:x:569:502:Priya Tiger:/home/uttara/audio43/ua9526:/bin/bash
+ua9935:x:570:502:Rajeshwari H.V:/home/uttara/audio43/ua9935:/bin/bash
+ua6315:x:571:502:Gowri Varaprasadini:/home/uttara/audio43/ua6315:/bin/bash
+ua9850:x:572:502:Spoorthi R:/home/uttara/audio43/ua9850:/bin/bash
+ua9964:x:573:502:Supriya Gowda:/home/uttara/audio43/ua9964:/bin/bash
+ua2951:x:574:502:ramesh:/home/uttara/audio43/ua2951:/bin/bash
+ua9670:x:575:502:Shruthi:/home/uttara/audio43/ua9670:/bin/bash
+ua9001:x:576:502:Prithwi:/home/uttara/audio43/ua9001:/bin/bash
+a9935:x:577:502:Rajeshwari.H..V:/home/uttara/audio43/a9935:/bin/bash
+a9914:x:578:502:Priyanka.D.Katewal:/home/uttara/audio43/a9914:/bin/bash
+a9636:x:579:502:Vinutha.C.E:/home/uttara/audio43/a9636:/bin/bash
+#a2951:x:580:502:Ramesh:/home/uttara/audio43/a2951:/bin/bash
+a3737:x:581:502:Annapurna.N.G:/home/uttara/audio43/a3737:/bin/bash
+a8787:x:582:502:Sangeetha:/home/uttara/audio43/a8787:/bin/bash
+a9917:x:583:502:Bhanu.T:/home/uttara/audio43/a9917:/bin/bash
+ua3613:x:584:502:rame:/home/uttara/audio43/ua3613:/bin/bash
+a9943:x:585:502:Shilpa.M.B:/home/uttara/audio43/a9943:/bin/bash
+a9928:x:586:502:Sweta.M:/home/uttara/audio43/a9928:/bin/bash
+ua9204:x:587:502:Pallavi:/home/uttara/audio43/ua9204:/bin/bash
+ua9995:x:588:502:Suma.N:/home/uttara/audio43/ua9995:/bin/bash
+ua9525:x:589:502:Archana.V.padgul:/home/uttara/audio43/ua9525:/bin/bash
+ua8838:x:590:502:Chaitra:/home/uttara/audio43/ua8838:/bin/bash
+ua9461:x:591:502:Sowjanya.V:/home/uttara/audio43/ua9461:/bin/bash
+b0024:x:592:502:Savita.G.Nagaraddi:/home/uttara/audio43/b0024:/bin/bash
+#b9966:x:593:502:Amritha.K.R:/home/uttara/audio43/b9966:/bin/bash
+a9966:x:594:502:Amritha.K.R:/home/uttara/audio43/a9966:/bin/bash
+a672:x:595:502:Shreedevi.B.R:/home/uttara/audio43/a672:/bin/bash
+a8455:x:596:502:Vidya Parameshwar Hegde:/home/uttara/audio43/a8455:/bin/bash
+a9921:x:597:502:Prema.M.Gavarawad:/home/uttara/audio43/a9921:/bin/bash
+a2476:x:598:502:Savita:/home/uttara/audio43/a2476:/bin/bash
+b0030:x:599:502:Archana Aradhya.S:/home/uttara/audio43/b0030:/bin/bash
+b0041:x:600:502:Arpitha.H:/home/uttara/audio43/b0041:/bin/bash
+#a9923:x:601:502:Asha.R:/home/uttara/audio43/a9923:/bin/bash
+a9973:x:602:502:Sowmya.K.C:/home/uttara/audio43/a9973:/bin/bash
+b0129:x:603:502:Shrilata.H.J:/home/uttara/audio43/b0129:/bin/bash
+a9415:x:604:502:Kaivalya.V:/home/uttara/audio43/a9415:/bin/bash
+b0093:x:605:502:Ashwini.K.M:/home/uttara/audio43/b0093:/bin/bash
+a9944:x:606:502:Radhika Srinandan:/home/uttara/audio43/a9944:/bin/bash
+ua9338:x:607:502:nuthan:/home/uttara/audio43/ua9338:/bin/bash
+b0134:x:608:502:Ambreen.Taj:/home/uttara/audio43/b0134:/bin/bash
+b0096:x:609:502:S.V Namitha:/home/uttara/audio43/b0096:/bin/bash
+a9948:x:610:502:Kanchana.S:/home/uttara/audio43/a9948:/bin/bash
+a9949:x:611:502:Anitha.S.B:/home/uttara/audio43/a9949:/bin/bash
+b0141:x:612:502:Manjula.R:/home/uttara/audio43/b0141:/bin/bash
+b0078:x:613:502:Praveena.S:/home/uttara/audio43/b0078:/bin/bash
+b0076:x:614:502:Rajeshwari Kulkarni:/home/uttara/audio43/b0076:/bin/bash
+b0077:x:615:502:Shruthi.A.C:/home/uttara/audio43/b0077:/bin/bash
+b0039:x:616:502:Poornimal.L:/home/uttara/audio43/b0039:/bin/bash
+a9743:x:617:502:Tanuja.R.Y:/home/uttara/audio43/a9743:/bin/bash
+b0044:x:618:502:Savitha.H.Jalihal:/home/uttara/audio43/b0044:/bin/bash
+b0123:x:619:502:Ruchi Sharma:/home/uttara/audio43/b0123:/bin/bash
+a6489:x:620:502:Padmini.C:/home/uttara/audio43/a6489:/bin/bash
+a0111:x:621:502:UTTARA,UTTARA:/home/uttara/audio43/a0111:/bin/bash
+b0068:x:622:502:Vidya.S:/home/uttara/audio43/b0068:/bin/bash
+a9904:x:623:502:Samta Sharma:/home/uttara/audio43/a9904:/bin/bash
+b0159:x:624:502:Varsha.N.K:/home/uttara/audio43/b0159:/bin/bash
+b0197:x:625:502:Ashwini Kalkoti:/home/uttara/audio43/b0197:/bin/bash
+b0017:x:626:502:Asha Nadgoud:/home/uttara/audio43/b0017:/bin/bash
+b0094:x:627:502:Spurthi Shivappa:/home/uttara/audio43/b0094:/bin/bash
+b0091:x:629:502:sandeep:/home/b0091:/bin/bash
+a9583:x:630:502:Ashwini Jaganath:/home/uttara/audio43/a9583:/bin/bash
+b0190:x:631:502:Mamatha:/home/uttara/audio43/b0190:/bin/bash
+b0055:x:631:502:Sahana.K:/home/uttara/audio43/b0055:/bin/bash
+b0169:x:632:502:Vathsala.D.G:/home/uttara/audio43/b0169:/bin/bash
+b0151:x:633:502:Vidhya M.S:/home/uttara/audio43/b0151:/bin/bash
+a9480:x:634:502:Anitha.K:/home/uttara/audio43/a9480:/bin/bash
+b0236:x:635:502:Sowmya.M:/home/uttara/audio43/b0236:/bin/bash
+b0065:x:636:502:Bindu.K.C:/home/uttara/audio43/b0065:/bin/bash
+b0223:x:637:502:Nethravathi.G.Nelogal:/home/uttara/audio43/b0223:/bin/bash
+a9802:x:638:502:Shoba:/home/uttara/audio43/a9802:/bin/bash
+ua9627:x:639:502:Jyoti K:/home/uttara/audio43/ua9627:/bin/bash
+b0233:x:640:502:Arpitha.K.V:/home/uttara/audio43/b0233:/bin/bash
+b0271:x:641:502:Shruthi.K.J:/home/uttara/audio43/b0271:/bin/bash
+b0268:x:642:502:Manjula.G.N:/home/uttara/audio43/b0268:/bin/bash
+b0234:x:643:502:Kavitha.S.N:/home/uttara/audio43/b0234:/bin/bash
+b0145:x:644:502:Jhansi.P:/home/uttara/audio43/b0145:/bin/bash
+a2584:x:645:502:Vasantha.H.G:/home/uttara/audio43/a2584:/bin/bash
+a1706:x:646:502:Mamatha.B.M:/home/uttara/audio43/a1706:/bin/bash
+b0287:x:647:502:Aruna.S:/home/uttara/audio43/b0287:/bin/bash
+a9996:x:648:502:Bhavana.B.S:/home/uttara/audio43/a9996:/bin/bash
+a6824:x:649:502:Swathi.G:/home/uttara/audio43/a6824:/bin/bash
+b0330:x:650:502:Megha.S:/home/uttara/audio43/b0330:/bin/bash
+#a9799:x:651:502:Chaitra.D:/home/uttara/audio43/a9799:/bin/bash
+b0112:x:652:502:Manohari.G.L.N:/home/uttara/audio43/b0112:/bin/bash
+b0010:x:653:502:Akila.P:/home/uttara/audio43/b0010:/bin/bash
+b0011:x:654:502:Arpitha.R:/home/uttara/audio43/b0011:/bin/bash
+b0002:x:655:502:Divya.K:/home/uttara/audio43/b0002:/bin/bash
+b0317:x:656:502:Pooja.P:/home/uttara/audio43/b0317:/bin/bash
+a6636:x:657:502:Gaayathri:/home/uttara/audio43/a6636:/bin/bash
+b0399:x:658:502:Suchetha Sarji:/home/uttara/audio43/b0399:/bin/bash
+b0403:x:659:502:Namratha.B.K:/home/uttara/audio43/b0403:/bin/bash
+b0324:x:660:502:Aparna.B.J:/home/uttara/audio43/b0324:/bin/bash
+b0110:x:661:502:Shruthi.H.V:/home/uttara/audio43/b0110:/bin/bash
+b0414:x:662:502:Kavya.M.P:/home/uttara/audio43/b0414:/bin/bash
+b0392:x:663:502:Bhavya.M.S:/home/uttara/audio43/b0392:/bin/bash
+b0342:x:664:502:Adithi.T.R:/home/uttara/audio43/b0342:/bin/bash
+b0351:x:665:502:Priyanka.G:/home/uttara/audio43/b0351:/bin/bash
+b0383:x:666:502:Shubha.S.Y:/home/uttara/audio43/b0383:/bin/bash
+b0361:x:667:502:Rashmi.S.0:/home/uttara/audio43/b0361:/bin/bash
+b0409:x:668:502:Nethra.N:/home/uttara/audio43/b0409:/bin/bash
+b0397:x:669:502:Ashwini.S:/home/uttara/audio43/b0397:/bin/bash
+b0393:x:670:502:Sindhu.S.R:/home/uttara/audio43/b0393:/bin/bash
+b0437:x:671:502:Mohana.R:/home/uttara/audio43/b0437:/bin/bash
+b0454:x:672:502:Rashmi.T.B:/home/uttara/audio43/b0454:/bin/bash
+a8079:x:673:502:Bhagya:/home/uttara/audio43/a8079:/bin/bash
+b0462:x:674:502:Bindu Madhuri.B:/home/uttara/audio43/b0462:/bin/bash
+b0359:x:675:502:Thejeshwini.M.G:/home/uttara/audio43/b0359:/bin/bash
+b0356:x:676:502:Thejeshwini.M.G:/home/uttara/audio43/b0356:/bin/bash
+b0489:x:677:502:Shruthi.A:/home/uttara/audio43/b0489:/bin/bash
+b0415:x:678:502:Anupriya:/home/uttara/audio43/b0415:/bin/bash
+b0486:x:679:502:Vidya.M.Sankeshwar:/home/uttara/audio43/b0486:/bin/bash
+b9549:x:680:502:Ushashree Ankaskar:/home/uttara/audio43/b9549:/bin/bash
+b0456:x:681:502:Manasa.S:/home/uttara/audio43/b0456:/bin/bash
+a9549:x:682:502:Ushashree Ankaskar:/home/uttara/audio43/a9549:/bin/bash
+b0427:x:683:502:Gayathri.C.M:/home/uttara/audio43/b0427:/bin/bash
+b0154:x:684:502:Manasa.K.N:/home/uttara/audio43/b0154:/bin/bash
+b0472:x:685:502:Manjula.S.Kurtakoti:/home/uttara/audio43/b0472:/bin/bash
+b0436:x:686:502:Shruthi.G.S:/home/uttara/audio43/b0436:/bin/bash
+b0459:x:687:502:Kavitha.R:/home/uttara/audio43/b0459:/bin/bash
+b0431:x:688:502:Sowmya.S:/home/uttara/audio43/b0431:/bin/bash
+b0506:x:689:502:Vaishali.M.Katti:/home/uttara/audio43/b0506:/bin/bash
+b0496:x:690:502:Kavya Prasad:/home/uttara/audio43/b0496:/bin/bash
+b0386:x:691:502:DEEPTHY.R:/home/uttara/audio43/b0386:/bin/bash
+b0494:x:692:502:CHETANA.N:/home/uttara/audio43/b0494:/bin/bash
+b0588:x:693:502:THARA.B:/home/uttara/audio43/b0588:/bin/bash
+b0587:x:694:502:Mangala.Y.Patil:/home/uttara/audio43/b0587:/bin/bash
+b0577:x:695:502:Aspiya Begum:/home/uttara/audio43/b0577:/bin/bash
+a2521:x:696:502:Gangadhar :/home/uttara/audio43/a2521:/bin/bash
+b0422:x:697:502:B.S.Kavya:/home/uttara/audio43/b0422:/bin/bash
+b0557:x:698:502:SHILPA.S.HIREGOUDAR:/home/uttara/audio43/b0557:/bin/bash
+b0296:x:699:502:SINDHU.J:/home/uttara/audio43/b0296:/bin/bash
+b0541:x:700:502:AMRUTHA.A.MANVI:/home/uttara/audio43/b0541:/bin/bash
+b0628:x:701:502:LAXMI.T.MANAGOLI:/home/uttara/audio43/b0628:/bin/bash
+b0451:x:702:502:SHEWETHA.M:/home/uttara/audio43/b0451:/bin/bash
+b0660:x:703:502:SUPRIYA BADAD:/home/uttara/audio43/b0660:/bin/bash
+b0510:x:704:502:CHAITRA.M.P:/home/uttara/audio43/b0510:/bin/bash
+b0670:x:705:502:SHRUTHI.B.S:/home/uttara/audio43/b0670:/bin/bash
+b0685:x:706:502:ROOPA.H.S:/home/uttara/audio43/b0685:/bin/bash
+b0473:x:707:502:RAKSHITHA.S.SHETTY:/home/uttara/audio43/b0473:/bin/bash
+a9997:x:708:502:NETHRAVATHI.J:/home/uttara/audio43/a9997:/bin/bash
+b0481:x:709:502:PRATHIKSHA:/home/uttara/audio43/b0481:/bin/bash
+b0493:x:710:502:SUNITA.B.MALAGI:/home/uttara/audio43/b0493:/bin/bash
+b0466:x:711:502:RASHMI:/home/uttara/audio43/b0466:/bin/bash
+b0516:x:712:502:SAVITHA.S:/home/uttara/audio43/b0516:/bin/bash
+b0590:x:713:502:UMADEVI PATIL:/home/uttara/audio43/b0590:/bin/bash
+b0584:x:714:502:SWETHA.C:/home/uttara/audio43/b0584:/bin/bash
+b0607:x:715:502:PRASHEELA.B.S:/home/uttara/audio43/b0607:/bin/bash
+b0608:x:716:502:RAMYA.L:/home/uttara/audio43/b0608:/bin/bash
+b0679:x:717:502:SOWMYA.K.R:/home/uttara/audio43/b0679:/bin/bash
+b0710:x:718:502:KRITHIKA.K.G:/home/uttara/audio43/b0710:/bin/bash
+b0391:x:719:502:SURYAPRABHA PRADHAN:/home/uttara/audio43/b0391:/bin/bash
+b0698:x:720:502:DIVYA.C.SAJJAN:/home/uttara/audio43/b0698:/bin/bash
+b0531:x:721:502:CHANNAMMA.S.KENCHANNAVAR:/home/uttara/audio43/b0531:/bin/bash
+b0512:x:722:502:ROOPA.M.B:/home/uttara/audio43/b0512:/bin/bash
+b0645:x:723:502:SHUBHA BHAT.K:/home/uttara/audio43/b0645:/bin/bash
+b0694:x:724:502:AMBUJA.D:/home/uttara/audio43/b0694:/bin/bash
+b0365:x:725:502:ANURADHA.T.S:/home/uttara/audio43/b0365:/bin/bash
+b0605:x:726:502:APARNA.C.H:/home/uttara/audio43/b0605:/bin/bash
+b0733:x:727:502:ANITHA.K.H:/home/uttara/audio43/b0733:/bin/bash
+b0699:x:728:502:RAMYA.A:/home/uttara/audio43/b0699:/bin/bash
+b0461:x:729:502:PREETHI.M.R:/home/uttara/audio43/b0461:/bin/bash
+b0543:x:730:502:ROHINI.K.P:/home/uttara/audio43/b0543:/bin/bash
+b0671:x:731:502:C.M.POOJALAKSHMI:/home/uttara/audio43/b0671:/bin/bash
+b0542:x:732:502:PRUTHVIRANI.K:/home/uttara/audio43/b0542:/bin/bash
+b0738:x:733:502:SMITHA.H.M:/home/uttara/audio43/b0738:/bin/bash
+a8905:x:734:502:SHALINI.N:/home/uttara/audio43/a8905:/bin/bash
+a2522:x:735:501:babu:/home/uttara/audio43/a2522:/bin/bash
+b0745:x:736:502:DIVYA.R:/home/uttara/audio43/b0745:/bin/bash
+b0736:x:737:502:LAXMI WALI:/home/uttara/audio43/b0736:/bin/bash
+b0681:x:738:502:SHILPA SHREE.K:/home/uttara/audio43/b0681:/bin/bash
+a8815:x:739:502:YASHASWINI.M:/home/uttara/audio43/a8815:/bin/bash
+b0771:x:740:502:SANGEETHA.S:/home/uttara/audio43/b0771:/bin/bash
+b0770:x:741:502:RAMYA.J:/home/uttara/audio43/b0770:/bin/bash
+b0751:x:742:502:KAVANA.R:/home/uttara/audio43/b0751:/bin/bash
+b0610:x:743:502:POORNIMA.M.S:/home/uttara/audio43/b0610:/bin/bash
+b0612:x:744:502:VINUTHA.M:/home/uttara/audio43/b0612:/bin/bash
+b0599:x:745:502:SEEMA.N.PATTANSHETTI:/home/uttara/audio43/b0599:/bin/bash
+b0606:x:746:502:BEBI HALASANGI:/home/uttara/audio43/b0606:/bin/bash
+b0652:x:747:502:RAJINI.B.PATIL:/home/uttara/audio43/b0652:/bin/bash
+b0653:x:748:502:SHILPA.T.V:/home/uttara/audio43/b0653:/bin/bash
+b0768:x:749:502:SWAROOPARANI:/home/uttara/audio43/b0768:/bin/bash
+b0769:x:750:502:MUDKA SNEHA:/home/uttara/audio43/b0769:/bin/bash
+b0661:x:751:502:NEESHA SHIRALI:/home/uttara/audio43/b0661:/bin/bash
+b0763:x:752:502:ARPITHA.M.S:/home/uttara/audio43/b0763:/bin/bash
+b0576:x:753:502:SHAILAVATHI:/home/uttara/audio43/b0576:/bin/bash
+b0732:x:754:502:AKSHATHA.G:/home/uttara/audio43/b0732:/bin/bash
+b0687:x:755:502:GAYATHRI.M:/home/uttara/audio43/b0687:/bin/bash
+b0737:x:756:502:SUSHMA.S:/home/uttara/audio43/b0737:/bin/bash
+b0811:x:757:502:SRILATHA.A:/home/uttara/audio43/b0811:/bin/bash
+b0642:x:758:502:SUMANA.R:/home/uttara/audio43/b0642:/bin/bash
+b0426:x:759:502:VIMARSHA.K:/home/uttara/audio43/b0426:/bin/bash
+b0762:x:760:502:MITA ACHARYA:/home/uttara/audio43/b0762:/bin/bash
+b0562:x:761:502:MEGHANA.T.S:/home/uttara/audio43/b0562:/bin/bash
+b0563:x:762:502:SAVITHA.G:/home/uttara/audio43/b0563:/bin/bash
+b0774:x:763:502:SHILPA.V:/home/uttara/audio43/b0774:/bin/bash
+b0600:x:764:502:Kavitha Kollurkar:/home/uttara/audio43/b0600:/bin/bash
+b0714:x:765:502:ASHWINI.V.J:/home/uttara/audio43/b0714:/bin/bash
+b0730:x:766:502:MADHAVI.S:/home/uttara/audio43/b0730:/bin/bash
+b0697:x:767:502:GREESHMA.K.P:/home/uttara/audio43/b0697:/bin/bash
+b0527:x:768:502:ASHWINI.B.N:/home/uttara/audio43/b0527:/bin/bash
+b0331:x:769:502:KARUNA.S.A:/home/uttara/audio43/b0331:/bin/bash
+b0831:x:770:502:SOUJANYA.M:/home/uttara/audio43/b0831:/bin/bash
+b0583:x:771:502:AMITA PATIL:/home/uttara/audio43/b0583:/bin/bash
+b0824:x:772:502:CHAITANYA.G:/home/uttara/audio43/b0824:/bin/bash
+b0791:x:773:502:NANDINI.B.V:/home/uttara/audio43/b0791:/bin/bash
+b0817:x:774:502:ASHWINI.S.KURADAGI:/home/uttara/audio43/b0817:/bin/bash
+b0782:x:775:502:YOGALAKSHMI.R:/home/uttara/audio43/b0782:/bin/bash
+b0689:x:776:502:PREMA.A.PATIL:/home/uttara/audio43/b0689:/bin/bash
+b0845:x:777:502:SKANDA.S.BHARADWAJ:/home/uttara/audio43/b0845:/bin/bash
+a9416:x:778:502:Swetha.M.S:/home/uttara/audio43/a9416:/bin/bash
+b0873:x:779:502:Sunitha.S:/home/uttara/audio43/b0873:/bin/bash
+b0853:x:780:502:Ashwini.B:/home/uttara/audio43/b0853:/bin/bash
+b0834:x:781:502:Hema.B.S:/home/uttara/audio43/b0834:/bin/bash
+b0838:x:782:502:Hema.B.S:/home/uttara/audio43/b0838:/bin/bash
+b0669:x:783:502:SUMA NAIK.B:/home/uttara/audio43/b0669:/bin/bash
+a9494:x:784:502:SOUMYA:/home/uttara/audio43/a9494:/bin/bash
+b0837:x:785:502:VIBHA.G.N:/home/uttara/audio43/b0837:/bin/bash
+b0856:x:786:502:Sravanthi B.V:/home/uttara/audio43/b0856:/bin/bash
+b0756:x:787:502:Shalini.S:/home/uttara/audio43/b0756:/bin/bash
+b0757:x:788:502:Sushma.S.C:/home/uttara/audio43/b0757:/bin/bash
+b0843:x:789:502:Smitha.H.S:/home/uttara/audio43/b0843:/bin/bash
+b0892:x:790:502:ARCHANA.V:/home/uttara/audio43/b0892:/bin/bash
+b0848:x:791:502:KAVYASHREE.M.R:/home/uttara/audio43/b0848:/bin/bash
+b0792:x:792:502:APOORVA.C.BHAGYASRI:/home/uttara/audio43/b0792:/bin/bash
+ua9838:x:793:502:SHAKKEELA:/home/uttara/audio43/ua9838:/bin/bash
+b0851:x:794:502:VEENA.S.KABBURI:/home/uttara/audio43/b0851:/bin/bash
+b0887:x:795:502:SAVITA.S.BIRADAR:/home/uttara/audio43/b0887:/bin/bash
+ua6493:x:796:502:Har Har Mahadev:/home/uttara/audio43/ua6493:/bin/bash
+b0755:x:797:502:Devipriya T:/home/uttara/audio43/b0755:/bin/bash
+b0445:x:798:502:Navya K M:/home/uttara/audio43/b0445:/bin/bash
+b0870:x:799:502:Smita Patil:/home/uttara/audio43/b0870:/bin/bash
+b0875:x:800:502:Deepa B.C:/home/uttara/audio43/b0875:/bin/bash
+b0909:x:801:502:Ranjitha HR:/home/uttara/audio43/b0909:/bin/bash
+b0908:x:802:502:Bhavana AM:/home/uttara/audio43/b0908:/bin/bash
+b0183:x:803:502:Ashwini K Dokre:/home/uttara/audio43/b0183:/bin/bash
+b0876:x:804:502:Rajani A H:/home/uttara/audio43/b0876:/bin/bash
+a5655:x:805:502:Manjula M K:/home/uttara/audio43/a5655:/bin/bash
+ua7419:x:806:502:Sujatha GC:/home/uttara/audio43/ua7419:/bin/bash
+a7214:x:807:502:Keerti R Hunagund:/home/uttara/audio43/a7214:/bin/bash
+b0877:x:808:502:Sowmya K:/home/uttara/audio43/b0877:/bin/bash
+b0956:x:809:502:Savitha N:/home/uttara/audio43/b0956:/bin/bash
+b0917:x:810:502:Shubha S:/home/uttara/audio43/b0917:/bin/bash
+b0805:x:811:502:Vishalakshi AB:/home/uttara/audio43/b0805:/bin/bash
+ua9721:x:812:502:Babita:/home/uttara/audio43/ua9721:/bin/bash
+b0954:x:813:502:Shwetha S:/home/uttara/audio43/b0954:/bin/bash
+b0900:x:814:502:Rashmi T Janagouda:/home/uttara/audio43/b0900:/bin/bash
+b0899:x:815:502:Veda:/home/uttara/audio43/b0899:/bin/bash
+b0964:x:816:502:Shweta RH:/home/uttara/audio43/b0964:/bin/bash
+a2272:x:817:502:Jayashree KJ:/home/uttara/audio43/a2272:/bin/bash
+b0973:x:818:502:Jaya Sinha:/home/uttara/audio43/b0973:/bin/bash
+b0742:x:819:502:Suma Raghuprasad:/home/uttara/audio43/b0742:/bin/bash
+b0965:x:820:502:Ashwini SR:/home/uttara/audio43/b0965:/bin/bash
+b0944:x:821:502:Shobha V Acharya:/home/uttara/audio43/b0944:/bin/bash
+b0982:x:822:502:Vibha R Hegde:/home/uttara/audio43/b0982:/bin/bash
+b0947:x:823:502:Bhavya E.S:/home/uttara/audio43/b0947:/bin/bash
+b0943:x:824:502:Vidyashree.M.R:/home/uttara/audio43/b0943:/bin/bash
+b0844:x:825:502:Kavitha .S:/home/uttara/audio43/b0844:/bin/bash
+b0988:x:826:502:Shruthi.KJ:/home/uttara/audio43/b0988:/bin/bash
+a9820:x:827:502:Madhu.N:/home/uttara/audio43/a9820:/bin/bash
+file can not be opened - /etc/shadow
+
+

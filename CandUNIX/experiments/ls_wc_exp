@@ -1,0 +1,65 @@
+    1  vi bb.c
+    2  vi bb.c
+    3  cc bb.c
+    4  cc bb.c
+    5  a.out
+    6  a.out 
+    7  vi bb.c
+    8  scp bb.c b0831@89.0.0.230:
+    9  clear
+   10  vi bb.c
+   11  ls > temp
+   12  ls -l temp
+   13  wc < temp
+   14  ls | wc
+   15  wc
+   16  man wc
+   17  ls 
+   18  ls | wc
+   19  man wc
+   20  wc < temp
+   21  ls -l temp
+   22  man wc
+   23  ls | wc
+   24  man wc
+   25  ls |wc
+   26  ls
+   27  alias
+   28  ls
+   29  "ls"
+   30  'ls'
+   31  unalias ls
+   32  ls
+   33  ls > xx
+   34  vi xx
+   35  man 2 stat
+   36  man 2 fcntl
+   37  man istty
+   38  man ttyname
+   39  man isatty
+   40  man 2 fstat
+   41  tty
+   42  ls -l /dev/pts/1
+   43  ls
+   44  ls -C > xx
+   45  vi xx
+   46  pwd
+   47  ls -C | wc
+   48  ls | wc
+   49  ls -C | wc
+   50  ls -C > xx
+   51  vi xx
+   52  ls -C > xx
+   53  ls - C | wc
+   54  ls -C | wc
+   55  ls | wc
+   56  ls -C | tee xx | wc
+   57  vi xx
+   58  ls -C | tee xx | wc
+   59  man tee
+   60  vi /usr/include/stdio.h
+   61  man tee
+   62  pwd
+   63  ls
+   64  ls |wc
+   65  history 100 > ls_wc_exp

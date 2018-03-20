@@ -1,0 +1,3 @@
+
+a.c : test.c
+	cp test.c a.c

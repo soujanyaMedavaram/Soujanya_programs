@@ -1,0 +1,31 @@
+\a	alert bell 
+\b	back space
+\c	
+\d	
+\e	
+\f	form feed
+\g	
+\h	
+\i	
+\j	
+\k	
+\l	
+\m	
+\n	new line
+\o	
+\p	
+\q	
+\r	carriage return
+\s	
+\t	horizontal tab
+\u	
+\v	vertical tab
+\w	
+\x	
+\y	
+\z	
+\	back slash
+\?	question mark
+\'	double quote
+\ooo	octal number
+\xhhh	hexadecimal number

@@ -1,0 +1,95 @@
+# include <stdio.h>
+# include <sys/types.h>
+# include <sys/stat.h>
+# include <unistd.h>
+# include <fcntl.h>
+# include <errno.h>
+# include <string.h>
+# include "../ipc.h"
+# include <stdlib.h>
+# include <signal.h>
+# include <stdlib.h>
+
+# define CH_MAX	100
+
+struct ipc {
+	int *fd;
+};
+
+void open_ipc ( int curr_chl ) {
+	char channel[CH_MAX];
+	IPC *ipc_id;
+	ipc_id = malloc ( sizeof ( IPC ) );
+	ipc_id.fd = malloc ( 2 * sizeof ( int ) );
+	fd[0] = open ( "FIFO0", O_WRONLY );
+	if ( fd[0] < 0 )
+		do_exit ( 1, "open for req fifo failed\n" );
+	sprintf ( channel, "FIFO%d", curr_chl );
+	fd[curr_chl] = open ( channel, O_RDONLY );
+	if ( fd[curr_chl] < 0 )
+		do_exit ( 2, "open for reply fifo failed\n" );
+}
+
+void create_ipc ( int max_chl ) {
+	int i, j;
+	char channel[CH_MAX];
+	IPC *ipc_id;
+
+	ipc_id = malloc ( sizeof ( IPC ) );
+	ipc_id.fd = malloc ( (max_chl + 1 ) * sizeof ( int ) );
+
+	for ( i = 0; i <= max_chl; i++ ) {
+		sprintf ( channel, "FIFO%d", i );
+		if ( mkfifo ( channel, 0600 ) < 0 && EEXIST != errno ) {
+			for ( j = 0; j < i; j++ ) {
+				sprintf ( channel, "FIFO%d", j );
+				close ( fd[j] );
+				unlink  ( channel );
+			}
+			do_exit ( 2, "creation of fifo failed\n" );
+		}
+		fd[i] = open ( channel, O_RDWR );
+		printf ( "fd[%d] = %d\n", i, fd[i] );
+		if ( fd[i] < 0 ) {
+			for ( j = 0; j < i; j++ ) {
+				close ( fd[j] );
+				sprintf ( channel, "FIFO%d", j );
+				unlink ( channel );
+			}
+			do_exit ( 2, "creation of fifo failed\n" );
+		}
+	}
+}
+
+void read_request ( Request *req, int size ) {
+	if ( read ( fd[0], req, size ) < 0 )
+		fprintf ( stderr, "Error in reading request\n" );
+}
+
+void write_request ( Request *req, int size ) {
+	if ( write ( fd[0], req, size ) <= 0 )
+		fprintf ( stderr, "Error in writing request\n" );
+}
+
+void write_reply ( reply *rep,  int size, int channel ) {
+	if ( write ( fd[channel], rep, size ) <= 0 )
+		fprintf ( stderr, "Error in writing reply\n" );
+}
+void read_reply ( int channel , reply *rep, int size ) {
+	read ( fd[channel], rep, size );
+}
+void remove_ipc ( int fd_max , fd_db ) {
+	int i;
+	char channel[CH_MAX];
+	close ( fd_db );
+	for ( i = 0; i <= fd_max; i++ ) {
+		close ( fd[i] );
+		sprintf ( channel, "FIFO%d", i );
+		unlink ( channel );
+	}
+}
+
+void close_client ( int curr_chl ) {
+	close ( fd[0] );
+	close ( curr_chl );
+}

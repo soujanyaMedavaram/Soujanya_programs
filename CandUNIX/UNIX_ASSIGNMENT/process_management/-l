@@ -1,0 +1,14 @@
+total 60
+-rw-r--r--    1 b0831    audio43       350 Apr 17 19:24 1.c
+-rw-r--r--    1 b0831    audio43       323 Apr 19 18:21 2.c
+-rw-r--r--    1 b0831    audio43      1879 Apr 20 15:18 3.c
+-rw-r--r--    1 b0831    audio43       612 Apr 20 12:15 5a.c
+-rw-r--r--    1 b0831    audio43       598 Apr 20 12:15 5b.c
+-rw-r--r--    1 b0831    audio43       329 Apr 17 12:22 5.c
+-rw-r--r--    1 b0831    audio43       897 Apr 20 13:57 5c.c
+-rw-r--r--    1 b0831    audio43        20 Apr 20 12:42 5d.c
+-rwxr-xr-x    1 b0831    audio43     13614 Apr 20 15:18 a.out
+---x--x--T    1 b0831    audio43         4 Apr 20 15:04  -l
+---x--x--T    1 b0831    audio43         0 Apr 20 15:18 -l
+-rw-r--r--    1 b0831    audio43        76 Apr 16 15:20 sir2.c
+-rw-r--r--    1 b0831    audio43       141 Apr 16 13:00 xx

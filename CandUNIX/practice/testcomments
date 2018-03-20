@@ -1,0 +1,10 @@
+#include<stdio.h>
+/* testing comments */
+// this is comment
+///*test commnet 1
+/*//test comment 2
+/* test // tesing*/
+main()
+{
+	printf("testing of comments\n");
+}

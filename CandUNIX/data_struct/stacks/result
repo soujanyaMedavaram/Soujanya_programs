@@ -1,0 +1,12 @@
+<STACK : stack.o v5.o>
+<STACK>->word  <:>->word  <stack.o>->word  <v5.o>->word  <	cc -o STACK stack.o v5.o>
+<cc>->word  <-o>->word  <STACK>->word  <stack.o>->word  <v5.o>->word  <stack.o : stack.c stack.h>
+<stack.o>->word  <:>->word  <stack.c>->word  <stack.h>->word  <	cc -c stack.c>
+<cc>->word  <-c>->word  <stack.c>->word  <	echo compiled stack.c>
+<echo>->word  <compiled>->word  <stack.c>->word  <v5.o:v5.c stack.h>
+<v5.o>->word  <:>->word  <v5.c>->word  <stack.h>->word  <	@-echo going to  		compile v5.c>
+<@-echo>->word  <going>->word  <to>->word  <compile>->word  <v5.c>->word  <	cc -c v5.c>
+<cc>->word  <-c>->word  <v5.c>->word  <	@echo compiled v5.c>
+<@echo>->word  <compiled>->word  <v5.c>->word  <clean :>
+<clean>->word  <:>->word  <	-rm -f *.o >
+<-rm>->word  <-f>->word  <*.o>->word  <>->word  

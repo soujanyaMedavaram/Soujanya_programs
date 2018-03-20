@@ -1,0 +1,6 @@
+echo $1
+date
+pwd
+ps
+ls -l
+shell_scpt.sh abc def

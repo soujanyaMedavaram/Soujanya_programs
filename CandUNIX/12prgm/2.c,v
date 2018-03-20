@@ -1,0 +1,47 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@ * @;
+
+
+1.1
+date	2009.11.24.08.52.29;	author b0831;	state Exp;
+branches;
+next	;
+
+
+desc
+@exit
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@// convert an integer to decimal digits
+
+# include <stdio.h>
+
+main ( ) {
+	int num, dec, i, j, product, rem;
+	product = 1;
+	dec = j = 0;
+	printf ( "\n enter a binary number\n" );
+	scanf ( "%d", &num );
+	while ( num > 0 ) {
+		rem = num % 2;
+		if ( rem == 1 ) {
+			for ( i = 0; i < j; i++ )
+				product *= 2;
+			dec += product;
+			product = 1;
+		}
+		num = num / 10;
+		j++;
+	}
+	printf ( "%d\n", dec );
+}
+@

@@ -1,0 +1,76 @@
+# include <stdio.h>
+# include "../../sb.h"
+# include "ipc.h"
+# include <string.h>
+# include "../request.h"
+
+const struct {
+	char * cmd;
+	int req;
+	int nargs;
+	char * error;
+} cmd_list[] = { 
+	{ "create", 1, 4, "create <name> <phone> <balance>" },
+	{ "deposit", 2, 3, "deposit <acc_no> <amount>" },
+	{ "withdraw", 3, 3, "withdraw <acc_no> <amount> },
+	{ "change", 4, 3, "change <acc_no> <amount> },
+	{ "balance", 5, 2, "balance <acc_no> },
+	{ NULL }
+};
+
+main ( int argc, char *argv[] ) {
+	Request req;
+	union reply rep;
+	int i, curr_chl;
+	char *msg;
+
+	for ( i =0; cmd_list[i].cmd; i++ ) {
+		if ( !strcmp ( argv[0], cmd_list[i].cmd ) ) {
+			req.type = cmd_list[i].req;
+			if ( argc != cmd_list[i].nargs ) {
+				fprintf ( stderr, "Usage: %s\n",cmd_list[i].error\n" );
+				exit ( i + 1 );
+			}
+			break;
+		}
+	}
+	if ( !cmd_list[i].cmd ) {
+		fprintf ( stderr, "commands are\n" );
+		for ( i = 0; cmd_list[i].cmd; i++ )
+			fprintf ( stderr, "\t %d %s\n", (i + 1), cmd_list[i].cmd );
+		exit ( 1 );
+	}
+	switch ( req.type ) {
+		case 1:
+			strcpy ( req.cust_name , argv[1] );
+			strcpy ( req.phone, argv[2] );
+			break;
+		case 2: case 3:
+			req.acc_no = atoi ( argv[1] );
+			req.amount = atoi ( argv[2] );
+			break;
+		case 4:
+			req.acc_no = atoi ( argv[1] );
+			strcpy ( phone, argv[2] );
+			break;
+		case 5:
+			req.acc_no = atoi ( argv[1] );
+			break;
+	}
+	curr_chl = curr_channel ( );
+	req.rep_chl = curr_chl;
+	write_request ( 0, &req );
+	read_reply ( curr_chl, &rep, sizeof ( rep ) );
+	if ( rep.type == CREATE )
+		if ( rep.result == 1 )
+			printf ( "acc_no %d\n", rep.cr_rep.acc_no );
+	if ( rep.type == CHANGE )
+		if ( rep.type == 1 )
+			printf ( "new phone number %s\n", rep.ch_rep.phone );
+	if ( rep.type == BALANCE )
+		if ( rep.type == 1 )
+			printf ( "Current balance %d\n", rep.bl_rep.amount );
+	if ( rep.result == 0 )
+		printf ( "%s\n", rep.mag );
+	return 0;
+}

@@ -1,0 +1,69 @@
+# Select channel selection method by proper uncommenting
+
+SELECTION=static
+#SELECTION=dynamic
+
+#IPC=fifo
+#IPC=shm
+#IPC=msg
+IPC=socket
+PROCESS=client
+#PROCESS=nclient
+SRC=./
+
+all : server $(PROCESS)
+
+client: create deposit withdraw change balance shutdown
+	@echo compilation completed
+
+nclient:  $(PROCESS).c ../../utils.h ../sb.h ipc.h proto.h selection.h
+	cc -o nclient nclient.c $(IPC).o $(SELECTION).o utils.o
+
+server : $(SRC)server.c $(SRC)ipc.h $(SRC)proto.h ../sb.h \
+			$(IPC).o utils.o $(SELECTION).o
+	cc -o server $(SRC)server.c $(SELECTION).o $(IPC).o utils.o
+
+$(IPC).o : $(IPC).c $(SRC)ipc.h $(SRC)proto.h ../sb.h
+	cc -c $(IPC).c
+
+utils.o:	../../utils.c
+	cc -c ../../utils.c
+
+create : $(PROCESS).c $(SRC)ipc.h $(SRC)proto.h  ../sb.h \
+		utils.o $(SELECTION).o $(IPC).o 
+	cc -o create $(SRC)$(PROCESS).c utils.o $(SELECTION).o $(IPC).o 
+
+deposit : create 
+	@-rm -f deposit
+	ln  create deposit
+
+withdraw : create  
+	@-rm -f withdraw
+	ln create withdraw
+
+change : create  
+	@-rm -f change 
+	ln create change
+
+balance : create  
+	@-rm -f balance 
+	ln create balance
+
+shutdown : create
+	@-rm -f shutdown 
+	ln create shutdown
+	
+static.o : $(SRC)static.c $(SRC)selection.h $(SRC)config
+	cc -c $(SRC)static.c
+
+dynamic.o: $(SRC)dynamic.c $(SRC)selection.h $(SRC)ipc.h
+	cc -c $(SRC)dynamic.c
+
+clean:
+	@-rm create change balance shutdown deposit withdraw 2> /dev/null
+	@-rm server 2> /dev/null
+	@-rm static.o 2> /dev/null
+	@-rm dynamic.o 2> /dev/null
+	@-rm utils.o 2> /dev/null
+	@-rm $(IPC).o 2> /dev/null
+	@-rm $(PROCESS) 2> /dev/null
