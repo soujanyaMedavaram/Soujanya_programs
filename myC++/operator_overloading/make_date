@@ -1,0 +1,11 @@
+# make script for date.h date.c++ app_date.c++
+
+DATE : date.o app_date.o date.h
+	c++ -o DATE date.o app_date.o
+
+date.o : date.c++ date.h
+	c++ -c date.c++
+
+app_date.o : app_date.c++ date.h
+	c++ -c app_date.c++
+

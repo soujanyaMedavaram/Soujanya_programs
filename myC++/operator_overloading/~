@@ -1,0 +1,135 @@
+# include <iostream>
+
+using namespace std;
+
+class complex {
+	double real, img;
+	
+	public :
+		complex ( ) : real ( 0 ), img ( 0 ) { }
+		complex ( double  re ) : real ( re ), img ( 0 ) { }
+		complex ( double re, double im ) : real ( re ), img ( im ) { }
+
+		complex & operator += ( complex a );
+		complex & operator -= ( complex a );
+		complex & operator *= ( complex a );
+		complex & operator /= ( complex a );
+		complex & operator =  ( complex a );
+
+		friend complex operator+ ( complex a, complex b );
+		friend complex operator- ( complex a, complex b );
+		friend complex operator* ( complex a, complex b );
+		friend complex operator/ ( complex a, complex b );
+
+		void read_real ( double re ) { real = re; }
+		void read_img  ( double im ) { img  = im;  }
+		double  print_real ( ) { return real; }
+		double  print_img ( ) { return img;  }
+			
+};
+
+complex & operator += ( complex a ) {
+	real += a.real;
+	img  += a.img;
+	return *this;
+}
+
+complex & operator -= ( complex a ) {
+	real -= a.real;
+	img  -= a.img;
+	return *this;
+}
+
+complex & operator *= ( complex a ) {
+	real = ( real * a.real ) - ( a.img * b.img );
+	img  = ( real * a.img  ) + ( a.img * b.real );
+	return *this;
+}
+
+complex & operator/= ( complex a ) {
+	double deno;
+	deno = ( a.real * a.real ) + ( a.img * a.img ); 
+	real = ( (real * a.real ) + ( img * a.img ) ) / deno ;
+	img  = ( ( img * a.real ) - ( real * a.img ) ) / deno;
+	return *this;
+}
+
+complex & operator = ( complex a ) {
+	real = a.real;
+	img  = a.img;
+	return *this;
+}
+
+complex operator+ ( complex a, complex b ) {
+	return complex ( a.real + b.real, a.img + b.img );
+}
+
+complex operator- ( complex a, complex b ) {
+	return complex ( a.real - b.real, a.img - b.img );
+}
+
+complex operator* ( complex a, complex b ) {
+	complex res;
+	res.real = ( a.real * b.real ) - ( a.img * b.img  );
+	res.img  = ( a.real * b.img  ) + ( a.img * b.real );
+	return res;
+}
+
+complex operator/ ( complex a, complex b ) {
+	complex res;
+	double deno;
+	deno =  ( b.real * b.real ) + ( b.img * b.img );
+	res.real = ( ( a.real * b.real ) + ( a.img * b.img ) ) / deno;
+	res.img  = ( ( a.img * b.real ) - ( a.real * b.img ) ) / deno;
+	return res;
+}
+
+ostream & operator << ( ostream &s, complex &c ) {
+	cout << '(' << c.print_real ( ) << "+i" << c.print_img ( ) << ')' ;
+	cout << "\n";
+	//return s;
+}
+
+istream & operator >> ( istream &s, complex &c ) {
+	double real, img;
+	cin >> real;
+	cin >> img;
+	c.read_real ( real );
+	c.read_img  ( img  );
+}
+
+main  (  ) {
+	complex c1, c2, c3, c4;
+	c4 = c1;
+	cout << "Enter real and imaginary parts\n";
+	cin >> c1;
+	cin >> c2;
+	cout << " ADDITION\n" ;
+	c3 = c1 + c2;
+	cout << c3;
+	c1 += c2;
+	cout << c1;
+	c1 = c4;
+	cout << " DIFFERENCE\n" ;
+	c3 = c1 - c2;
+	cout << c3;
+	c1 -= c2;
+	cout << c1;
+	c1 = c4;
+	cout << " MULTIPLICATION\n";
+	c3 = c1 * c2;
+	cout << c3;
+	c1 *= c2;
+	cout << c1;
+	c1 = c4;
+	cout << " DIVISION\n" ;
+	c3 = c1 / c2 ;
+	cout << c3;
+	c1 /= c2;
+	cout << c1;
+}
+
+
+
+
+

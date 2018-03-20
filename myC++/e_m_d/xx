@@ -1,0 +1,43 @@
+    1  cd myC++/e_m_d/
+    2  ls
+    3  vi derived_class.c++
+    4  history 20
+    5  cc -c ../operator_overloading/date.c++
+    6  cc ../operator_overloading/date.c++ EmpMgrDir.c++ derived_class.c++
+    7  vi derived_class.h
+    8  c++ ../operator_overloading/date.c++ EmpMgrDir.c++ derived_class.c++
+    9  vi derived_class.c++ 
+   10  c++ ../operator_overloading/date.c++ EmpMgrDir.c++ derived_class.c++
+   11  vi derived_class.h
+   12  c++ ../operator_overloading/date.c++ EmpMgrDir.c++ derived_class.c++
+   13  vi derived_class.h
+   14  c++ ../operator_overloading/date.c++ EmpMgrDir.c++ derived_class.c++
+   15  vi derived_class.h
+   16  vi a.c++
+   17  c++ a.c++
+   18  vi a.c++
+   19  c++ a.c++
+   20  vi a.c++
+   21  c++ a.c++
+   22  vi a.c++
+   23  c++ a.c++
+   24  vi a.c++
+   25  c++ a.c++
+   26  vi a.c++
+   27  c++ a.c++
+   28  vi a.c++
+   29  c++ a.c++
+   30  vi a.c++
+   31  c++ a.c++
+   32  vi a.c++
+   33  c++ a.c++
+   34  v
+   35  vi a.c++
+   36  c++ a.c++
+   37  vi a.c++
+   38  c++ a.c++
+   39  vi a.c++
+   40  c++ a.c++
+   41  vi derived_class.c++
+   42  history 20
+   43  history 100 > xx

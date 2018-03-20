@@ -1,0 +1,47 @@
+
+template<class T> class List {
+	struct Node {
+		Node *prev;
+		Node *next;
+		T data;
+	};
+
+	Node *first;
+	Node *last;
+	int nitems;
+	
+	public :
+
+	class Empty {
+	};
+
+	List ( ) {
+		first = last = NULL;
+		nitems = 0;
+	}
+
+	List<T> & push_front ( T item);
+	List<T> & push_back ( T item );
+	int rem_beg ( ) throw ( List<T> :: Empty );
+	int rem_end ( ) throw ( List<T> :: Empty );
+
+	List<T> & operator += ( T item );
+	List<T> & operator -= ( T &item );
+	List<T> & operator += ( const List<T> &l );
+	List<T> & operator << ( T item );
+	List<T> & operator >> ( T &item );
+	friend void operator << ( T &item, List<T> &ll ) {
+	}
+	friend void operator >> ( T item, List<T> &ll ) {
+	}
+	friend ostream & operator << ( ostream &os, const List<T> &list ) {
+	}
+	friend istream & operator >> ( istream &is, List<T> &list ) {
+	}
+};
+
+template<class T> List<T> & List<T> :: push_front ( T item ) {
+}
+
+template<class T> List<T> & List<T> :: push_front ( T item ) {
+}
